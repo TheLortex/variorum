@@ -236,7 +236,7 @@ int set_intel_func_ptrs(int idx)
             intel_cpu_fm_06_55_get_frequencies;
     }
     // Kaby Lake 06_9E
-    else if (*g_platform[idx].arch_id == FM_06_9E)
+    else if (*g_platform[idx].arch_id == FM_06_9E || *g_platform[idx].arch_id == FM_06_8E)
     {
         g_platform[idx].variorum_print_power_limit =
             intel_cpu_fm_06_9e_get_power_limits;
